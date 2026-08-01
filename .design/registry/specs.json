@@ -1,0 +1,35 @@
+{
+  "specs": [
+    {
+      "name": "Garnish Design Tokens",
+      "tokens": {
+        "colors": {
+          "accent": { "value": "#6366f1" },
+          "accent-hover": { "value": "#4f46e5" },
+          "accent-light": { "value": "#818cf8" },
+          "accent-subtle": { "value": "#eef2ff" },
+          "indigo-50": { "value": "#eef2ff" },
+          "indigo-100": { "value": "#e0e7ff" },
+          "indigo-200": { "value": "#c7d2fe" },
+          "indigo-500": { "value": "#6366f1" },
+          "indigo-600": { "value": "#4f46e5" },
+          "indigo-700": { "value": "#4338ca" },
+          "zinc-900": { "value": "#18181b" },
+          "zinc-700": { "value": "#3f3f46" },
+          "zinc-500": { "value": "#71717a" },
+          "zinc-400": { "value": "#a1a1aa" },
+          "zinc-200": { "value": "#e4e4e7" },
+          "zinc-100": { "value": "#f4f4f5" },
+          "zinc-50": { "value": "#fafafa" },
+          "white": { "value": "#ffffff" },
+          "red-50": { "value": "#fef2f2" },
+          "red-200": { "value": "#fecaca" },
+          "red-500": { "value": "#ef4444" },
+          "macos-red": { "value": "#ff5f57" },
+          "macos-yellow": { "value": "#febc2e" },
+          "macos-green": { "value": "#28c840" }
+        }
+      }
+    }
+  ]
+}
