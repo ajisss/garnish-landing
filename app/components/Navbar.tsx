@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <div className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
       <nav
-        className="pointer-events-auto flex items-center gap-2 px-3 py-2 rounded-[22px] w-full max-w-[640px] md:w-auto"
+        className="pointer-events-auto flex items-center gap-2 px-3 py-2 rounded-[22px] w-full md:w-auto flex-nowrap"
         style={{
           background: "rgba(255,255,255,0.08)",
           backdropFilter: "blur(16px) saturate(140%)",
