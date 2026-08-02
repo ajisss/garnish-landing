@@ -38,7 +38,7 @@ export default function Problem() {
       <div className="max-w-[1100px] mx-auto px-12">
         {/* Heading */}
         <div className="text-center mb-20">
-          <h2 className="text-[clamp(32px,4.5vw,56px)] font-bold leading-[1.1] tracking-[-0.03em] text-zinc-900 mb-5">
+          <h2 className="text-[clamp(28px,4vw,48px)] font-bold leading-[1.1] tracking-[-0.03em] text-zinc-900 mb-5">
             Audit Otomatis,<br />dengan Standar yang Konsisten
           </h2>
           <p className="text-[16px] text-zinc-400 max-w-[500px] mx-auto leading-[1.75]">
@@ -66,7 +66,7 @@ export default function Problem() {
                     }}
                   />
                 )}
-                <div className="relative z-10 w-[68px] h-[68px] rounded-full bg-indigo-500 flex items-center justify-center mb-6">
+                <div className="relative z-10 w-[68px] h-[68px] rounded-full bg-blue-500 flex items-center justify-center mb-6">
                   <Icon size={26} color="white" strokeWidth={1.75} />
                 </div>
                 <h3 className="relative z-10 text-[17px] font-semibold text-zinc-900 mb-3 leading-snug">{item.title}</h3>
@@ -90,7 +90,7 @@ export default function Problem() {
                   i > 0 ? "border-l border-zinc-200" : ""
                 }`}
               >
-                <div className="w-[68px] h-[68px] rounded-full bg-indigo-500 flex items-center justify-center mb-6">
+                <div className="w-[68px] h-[68px] rounded-full bg-blue-500 flex items-center justify-center mb-6">
                   <Icon size={26} color="white" strokeWidth={1.75} />
                 </div>
                 <h3 className="text-[17px] font-semibold text-zinc-900 mb-3 leading-snug">{item.title}</h3>

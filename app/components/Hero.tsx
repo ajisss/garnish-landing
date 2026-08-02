@@ -24,8 +24,21 @@ export default function Hero() {
           Audit Landing Page,{" "}
           <span className="inline-flex items-center gap-3">
             Otomatis
-            <span className="inline-flex items-center justify-center w-[56px] h-[56px] md:w-[68px] md:h-[68px] rounded-[16px] bg-indigo-500 text-white flex-shrink-0 align-middle">
-              <Sparkles size={28} strokeWidth={1.5} />
+            <span
+              className="inline-flex items-center justify-center w-[56px] h-[56px] md:w-[68px] md:h-[68px] rounded-[16px] text-white flex-shrink-0 align-middle relative overflow-hidden"
+              style={{
+                background: "linear-gradient(145deg, #60a5fa 0%, #3b82f6 60%, #2563eb 100%)",
+                boxShadow: "0 1px 0 rgba(255,255,255,0.35) inset, 0 4px 16px rgba(37,99,235,0.4)",
+              }}
+            >
+              {/* Glass highlight */}
+              <span
+                className="absolute inset-0 rounded-[16px] pointer-events-none"
+                style={{
+                  background: "linear-gradient(160deg, rgba(255,255,255,0.28) 0%, rgba(255,255,255,0.04) 50%, transparent 100%)",
+                }}
+              />
+              <Sparkles size={28} strokeWidth={1.5} className="relative z-10" />
             </span>
           </span>{" "}
           dari Terminal.
@@ -39,13 +52,9 @@ export default function Hero() {
         {/* CTA */}
         <a
           href="https://github.com/ajisss/garnish-plugin"
-          className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-[12px] bg-zinc-900 hover:bg-zinc-700 text-white text-[15px] font-semibold transition-all no-underline shadow-lg shadow-zinc-900/20 group"
-          style={{
-            boxShadow: "0 0 0 1px rgba(0,0,0,0.08), 0 4px 24px rgba(0,0,0,0.15)",
-          }}
+          className="btn-primary"
         >
-          Mulai Gratis Sekarang
-          <span className="text-zinc-400 group-hover:translate-x-0.5 transition-transform">›</span>
+          Mulai Sekarang
         </a>
 
       </div>

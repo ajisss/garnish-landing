@@ -25,7 +25,7 @@ export default function WhatIsGarnish() {
         <div className="flex gap-20 items-start">
           {/* Left — sticky label + headline */}
           <div className="w-[380px] flex-shrink-0 sticky top-28">
-            <h2 className="text-[clamp(28px,3.5vw,42px)] font-bold leading-[1.15] tracking-[-0.025em] text-zinc-900 mb-5">
+            <h2 className="text-[clamp(28px,4vw,48px)] font-bold leading-[1.1] tracking-[-0.03em] text-zinc-900 mb-5">
               Plugin Claude Code untuk audit landing page.
             </h2>
             <p className="text-[15px] text-zinc-400 leading-[1.75]">
@@ -39,8 +39,8 @@ export default function WhatIsGarnish() {
               const Icon = p.icon;
               return (
                 <div key={p.title} className="flex items-start gap-5 py-8 first:pt-0 last:pb-0">
-                  <div className="w-10 h-10 rounded-[10px] bg-indigo-50 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Icon size={18} className="text-indigo-500" strokeWidth={1.75} />
+                  <div className="w-10 h-10 rounded-[10px] bg-blue-50 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Icon size={18} className="text-blue-500" strokeWidth={1.75} />
                   </div>
                   <div>
                     <h3 className="text-[16px] font-semibold text-zinc-900 mb-1.5">{p.title}</h3>

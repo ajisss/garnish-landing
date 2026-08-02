@@ -69,7 +69,7 @@ export default function Features() {
                   f.featured
                     ? {
                         background:
-                          "linear-gradient(145deg, #818cf8 0%, #6366f1 40%, #4f46e5 100%)",
+                          "linear-gradient(145deg, #60a5fa 0%, #3b82f6 40%, #2563eb 100%)",
                       }
                     : undefined
                 }
@@ -98,7 +98,7 @@ export default function Features() {
                   </h3>
                   <p
                     className={`text-[13px] leading-[1.7] ${
-                      f.featured ? "text-indigo-100" : "text-zinc-500"
+                      f.featured ? "text-blue-100" : "text-zinc-500"
                     }`}
                   >
                     {f.desc}

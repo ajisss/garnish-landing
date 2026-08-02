@@ -24,7 +24,7 @@ export default function FinalCTA() {
         </p>
         <a
           href="https://github.com/ajisss/garnish-plugin"
-          className="inline-flex items-center gap-2 px-8 py-4 rounded-[12px] bg-indigo-500 hover:bg-indigo-600 text-white text-[15px] font-semibold no-underline transition-all "
+          className="btn-primary"
         >
           Install Gratis Sekarang
         </a>

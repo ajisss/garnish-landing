@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-white overflow-hidden border-t border-zinc-100">
       {/* Giant wordmark */}
       <p
-        className="text-[clamp(120px,20vw,260px)] font-bold leading-[0.85] tracking-[-0.04em] text-zinc-100 select-none whitespace-nowrap pt-10 pb-10 text-center"
+        className="text-[clamp(120px,20vw,260px)] font-bold leading-[0.85] tracking-[-0.04em] text-zinc-100 hover:text-blue-100 transition-colors duration-300 select-none whitespace-nowrap pt-10 pb-10 text-center cursor-default"
         aria-hidden="true"
       >
         GARNISH

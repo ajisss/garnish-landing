@@ -16,3 +16,76 @@ code, pre, .font-mono { font-family: var(--font-jakarta), system-ui, sans-serif;
 }
 
 .dot-pulse { animation: pulse-dot 2s infinite; }
+
+/* 3D raised button styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  background: linear-gradient(180deg, #5b8ef0 0%, #3b6fd4 100%);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.25) inset,
+    0 4px 0 #1e4faa,
+    0 6px 16px rgba(37,99,235,0.35);
+}
+.btn-primary:hover {
+  background: linear-gradient(180deg, #6b9af5 0%, #4478d9 100%);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.25) inset,
+    0 4px 0 #1e4faa,
+    0 8px 20px rgba(37,99,235,0.4);
+  transform: translateY(-1px);
+}
+.btn-primary:active {
+  transform: translateY(2px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.2) inset,
+    0 1px 0 #1e4faa,
+    0 2px 8px rgba(37,99,235,0.25);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e293b;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.9) inset,
+    0 4px 0 #cbd5e1,
+    0 6px 16px rgba(0,0,0,0.08);
+}
+.btn-secondary:hover {
+  background: linear-gradient(180deg, #ffffff 0%, #e8eef5 100%);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.9) inset,
+    0 4px 0 #cbd5e1,
+    0 8px 20px rgba(0,0,0,0.1);
+  transform: translateY(-1px);
+}
+.btn-secondary:active {
+  transform: translateY(2px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.8) inset,
+    0 1px 0 #cbd5e1,
+    0 2px 8px rgba(0,0,0,0.06);
+}

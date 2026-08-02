@@ -5,7 +5,7 @@ const personas = [
     icon: Code2,
     role: "Developer",
     desc: "Yang dapat feedback desain dari mana-mana tapi tidak tahu mana yang harus dibenerin duluan. Garnish kasih prioritas jelas.",
-    iconBg: "bg-violet-500",
+    iconBg: "bg-blue-500",
   },
   {
     icon: Paintbrush,

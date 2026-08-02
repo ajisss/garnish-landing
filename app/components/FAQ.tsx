@@ -34,7 +34,7 @@ export default function FAQ() {
       <div className="max-w-[1100px] mx-auto px-12">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-[clamp(28px,4vw,48px)] font-bold leading-[1.15] tracking-[-0.03em] text-zinc-900">
+          <h2 className="text-[clamp(28px,4vw,48px)] font-bold leading-[1.1] tracking-[-0.03em] text-zinc-900">
             Ada pertanyaan?
           </h2>
           <p className="text-[clamp(24px,3.5vw,42px)] font-bold leading-[1.15] tracking-[-0.03em] text-zinc-300">

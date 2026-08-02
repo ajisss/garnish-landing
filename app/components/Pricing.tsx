@@ -81,18 +81,18 @@ export default function Pricing() {
               key={plan.name}
               className={`relative rounded-2xl p-7 flex flex-col transition-transform duration-300 hover:scale-105 ${
                 plan.featured
-                  ? "bg-indigo-500 text-white"
+                  ? "bg-blue-500 text-white"
                   : "bg-white border border-zinc-200"
               }`}
             >
               {plan.badge && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-indigo-600 text-white text-[11px] font-semibold px-3.5 py-1 rounded-full whitespace-nowrap">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[11px] font-semibold px-3.5 py-1 rounded-full whitespace-nowrap">
                   {plan.badge}
                 </div>
               )}
 
               <div className="min-h-[220px] flex flex-col">
-                <p className={`text-[13px] font-semibold mb-4 ${plan.featured ? "text-indigo-200" : "text-zinc-500"}`}>
+                <p className={`text-[13px] font-semibold mb-4 ${plan.featured ? "text-blue-200" : "text-zinc-500"}`}>
                   {plan.name}
                 </p>
 
@@ -101,13 +101,13 @@ export default function Pricing() {
                     {plan.price}
                   </span>
                   {plan.priceNote && (
-                    <span className={`text-[13px] ml-2 ${plan.featured ? "text-indigo-200" : "text-zinc-400"}`}>
+                    <span className={`text-[13px] ml-2 ${plan.featured ? "text-blue-200" : "text-zinc-400"}`}>
                       {plan.priceNote}
                     </span>
                   )}
                 </div>
 
-                <p className={`text-[13px] leading-[1.7] ${plan.featured ? "text-indigo-100" : "text-zinc-500"}`}>
+                <p className={`text-[13px] leading-[1.7] ${plan.featured ? "text-blue-100" : "text-zinc-500"}`}>
                   {plan.desc}
                 </p>
               </div>
@@ -115,30 +115,22 @@ export default function Pricing() {
               {plan.cta === "Join Waitlist" ? (
                 <button
                   onClick={() => setModalPlan(plan.name)}
-                  className={`block w-full text-center text-[14px] font-semibold py-3 rounded-[12px] mb-7 transition-all cursor-pointer border-0 ${
-                    plan.featured
-                      ? "bg-white text-indigo-600 hover:bg-indigo-50"
-                      : "bg-zinc-900 text-white hover:bg-zinc-700"
-                  }`}
+                  className={`w-full mb-7 !text-[14px] !py-3 ${plan.featured ? "btn-secondary" : "btn-primary"}`}
                 >
                   {plan.cta}
                 </button>
               ) : (
                 <a
                   href={plan.ctaHref}
-                  className={`block text-center text-[14px] font-semibold py-3 rounded-[12px] mb-7 no-underline transition-all ${
-                    plan.featured
-                      ? "bg-white text-indigo-600 hover:bg-indigo-50"
-                      : "bg-zinc-900 text-white hover:bg-zinc-700"
-                  }`}
+                  className={`w-full mb-7 !text-[14px] !py-3 ${plan.featured ? "btn-secondary" : "btn-primary"}`}
                 >
                   {plan.cta}
                 </a>
               )}
 
-              <div className={`border-t mb-6 ${plan.featured ? "border-indigo-400" : "border-zinc-100"}`} />
+              <div className={`border-t mb-6 ${plan.featured ? "border-blue-400" : "border-zinc-100"}`} />
 
-              <p className={`text-[11px] font-semibold uppercase tracking-[0.1em] mb-4 ${plan.featured ? "text-indigo-200" : "text-zinc-400"}`}>
+              <p className={`text-[11px] font-semibold uppercase tracking-[0.1em] mb-4 ${plan.featured ? "text-blue-200" : "text-zinc-400"}`}>
                 Yang kamu dapat
               </p>
               <ul className="flex flex-col gap-3">
@@ -147,9 +139,9 @@ export default function Pricing() {
                     <Check
                       size={14}
                       strokeWidth={2.5}
-                      className={`flex-shrink-0 mt-0.5 ${plan.featured ? "text-indigo-200" : "text-indigo-500"}`}
+                      className={`flex-shrink-0 mt-0.5 ${plan.featured ? "text-blue-200" : "text-blue-500"}`}
                     />
-                    <span className={`text-[13px] leading-snug ${plan.featured ? "text-indigo-50" : "text-zinc-600"}`}>
+                    <span className={`text-[13px] leading-snug ${plan.featured ? "text-blue-50" : "text-zinc-600"}`}>
                       {f}
                     </span>
                   </li>

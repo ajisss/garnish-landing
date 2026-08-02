@@ -23,7 +23,7 @@ const steps = [
         <p className="text-zinc-500">Extracting CSS... <span className="text-green-400">done</span></p>
         <p className="text-zinc-500">Running audit... <span className="text-green-400">done</span></p>
         <div className="mt-4 border-t border-zinc-700 pt-4">
-          <p className="text-indigo-400 font-semibold">Health Score: 61 / 100</p>
+          <p className="text-blue-400 font-semibold">Health Score: 61 / 100</p>
           <p className="text-zinc-400 text-[12px] mt-1">P0: 2 findings  ·  P1: 5 findings  ·  P2: 8 findings</p>
         </div>
       </div>
@@ -40,27 +40,60 @@ const steps = [
     stat: { value: "4 scope", label: "UI/UX, Konten, WCAG, Komponen." },
     visualLeft: false,
     visual: (
-      <div className="rounded-2xl bg-white border border-zinc-100 shadow-lg p-6">
-        <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-zinc-400 mb-4">Health Score</p>
-        <div className="flex items-end gap-3 mb-6">
-          <span className="text-[48px] font-bold text-zinc-900 leading-none">61</span>
-          <span className="text-[16px] text-zinc-400 mb-2">/ 100</span>
-        </div>
-        <div className="flex flex-col gap-2.5">
-          {[
-            { label: "UI/UX", score: 58, color: "bg-red-400" },
-            { label: "Konten", score: 72, color: "bg-yellow-400" },
-            { label: "WCAG", score: 49, color: "bg-red-400" },
-            { label: "Komponen", score: 80, color: "bg-green-400" },
-          ].map((s) => (
-            <div key={s.label} className="flex items-center gap-3">
-              <span className="text-[12px] text-zinc-500 w-20 flex-shrink-0">{s.label}</span>
-              <div className="flex-1 h-1.5 bg-zinc-100 rounded-full overflow-hidden">
-                <div className={`h-full rounded-full ${s.color}`} style={{ width: `${s.score}%` }} />
+      <div
+        className="relative rounded-3xl p-8 overflow-hidden"
+        style={{ background: "linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #93c5fd 100%)" }}
+      >
+        {/* Card 1 — main */}
+        <div className="bg-white rounded-2xl shadow-xl p-5 mb-4">
+          <div className="flex items-center justify-between mb-4">
+            <span className="text-[12px] font-semibold text-zinc-500">Health Score</span>
+            <span className="text-[11px] text-zinc-300">···</span>
+          </div>
+          <div className="flex items-end gap-2 mb-4">
+            <span className="text-[40px] font-bold text-zinc-900 leading-none">61</span>
+            <span className="text-[14px] text-zinc-400 mb-1">/ 100</span>
+            <span className="text-[11px] text-red-400 bg-red-50 px-2 py-0.5 rounded-full mb-1 ml-1">−8 vs last</span>
+          </div>
+          <div className="flex gap-1.5">
+            {[
+              { w: "58%", color: "bg-red-400" },
+              { w: "72%", color: "bg-yellow-400" },
+              { w: "49%", color: "bg-red-300" },
+              { w: "80%", color: "bg-green-400" },
+            ].map((b, i) => (
+              <div key={i} className="flex-1 flex flex-col gap-1">
+                <div className="h-1.5 bg-zinc-100 rounded-full overflow-hidden">
+                  <div className={`h-full rounded-full ${b.color}`} style={{ width: b.w }} />
+                </div>
               </div>
-              <span className="text-[12px] font-semibold text-zinc-700 w-6 text-right">{s.score}</span>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div className="flex gap-3 mt-1.5">
+            {["UI/UX", "Konten", "WCAG", "Komponen"].map((l) => (
+              <span key={l} className="flex-1 text-[10px] text-zinc-400 text-center">{l}</span>
+            ))}
+          </div>
+        </div>
+
+        {/* Card 2 — findings */}
+        <div className="bg-white rounded-2xl shadow-xl p-5 ml-8">
+          <div className="flex items-center justify-between mb-3">
+            <span className="text-[12px] font-semibold text-zinc-500">Top Findings</span>
+            <span className="text-[11px] text-zinc-300">···</span>
+          </div>
+          <div className="flex flex-col gap-2">
+            {[
+              { sev: "P0", label: "Contrast ratio 2.1:1", color: "bg-red-100 text-red-600" },
+              { sev: "P1", label: "CTA tap target 32px", color: "bg-orange-100 text-orange-600" },
+              { sev: "P2", label: "Line length 95ch", color: "bg-yellow-100 text-yellow-700" },
+            ].map((f) => (
+              <div key={f.sev} className="flex items-center gap-2.5">
+                <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded flex-shrink-0 ${f.color}`}>{f.sev}</span>
+                <span className="text-[12px] text-zinc-500">{f.label}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     ),
@@ -136,7 +169,7 @@ export default function HowItWorks() {
 function TextBlock({ step, index }: { step: typeof steps[0]; index: number }) {
   return (
     <div>
-      <span className="text-[11px] font-bold tracking-[0.14em] uppercase text-indigo-400 mb-3 block">
+      <span className="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400 mb-3 block">
         Langkah {index + 1}
       </span>
       <h3 className="text-[clamp(20px,2.5vw,30px)] font-bold leading-[1.2] tracking-[-0.02em] text-zinc-900 mb-4">
@@ -148,7 +181,7 @@ function TextBlock({ step, index }: { step: typeof steps[0]; index: number }) {
       <ul className="flex flex-col gap-2.5">
         {step.bullets.map((b) => (
           <li key={b} className="flex items-center gap-2.5">
-            <CheckCircle2 size={15} className="text-indigo-400 flex-shrink-0" strokeWidth={2} />
+            <CheckCircle2 size={15} className="text-blue-400 flex-shrink-0" strokeWidth={2} />
             <span className="text-[13px] text-zinc-600">{b}</span>
           </li>
         ))}

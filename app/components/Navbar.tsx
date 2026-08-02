@@ -44,7 +44,7 @@ export default function Navbar() {
       >
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 no-underline px-2 py-1 rounded-[14px] flex-shrink-0">
-          <div className="w-7 h-7 rounded-[8px] bg-indigo-500 flex items-center justify-center text-white text-[13px] font-bold">
+          <div className="w-7 h-7 rounded-[8px] bg-blue-500 flex items-center justify-center text-white text-[13px] font-bold">
             G
           </div>
           <span className="text-[14px] font-semibold text-zinc-900 tracking-tight">Garnish</span>
@@ -81,7 +81,7 @@ export default function Navbar() {
         {/* CTA */}
         <a
           href="https://github.com/ajisss/garnish-plugin"
-          className="text-[13px] font-semibold text-white bg-zinc-900 hover:bg-zinc-700 px-4 py-2 rounded-[12px] transition-colors no-underline flex-shrink-0"
+          className="btn-primary !text-[13px] !px-4 !py-2 flex-shrink-0"
         >
           Install gratis
         </a>

@@ -40,7 +40,7 @@ export default function WaitlistModal({ plan, onClose }: Props) {
 
         {submitted ? (
           <div className="text-center py-4">
-            <div className="w-12 h-12 rounded-full bg-indigo-50 flex items-center justify-center mx-auto mb-4">
+            <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mx-auto mb-4">
               <span className="text-[22px]">🎉</span>
             </div>
             <h3 className="text-[18px] font-bold text-zinc-900 mb-2">Kamu masuk waitlist!</h3>
@@ -49,7 +49,7 @@ export default function WaitlistModal({ plan, onClose }: Props) {
             </p>
             <button
               onClick={onClose}
-              className="mt-6 w-full py-3 rounded-[12px] bg-zinc-900 text-white text-[14px] font-semibold hover:bg-zinc-700 transition-colors"
+              className="btn-primary w-full !py-3 !text-[14px] mt-6"
             >
               Tutup
             </button>
@@ -71,7 +71,7 @@ export default function WaitlistModal({ plan, onClose }: Props) {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Nama kamu"
-                  className="w-full px-4 py-3 rounded-[12px] border border-zinc-200 text-[14px] text-zinc-900 placeholder:text-zinc-300 outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all"
+                  className="w-full px-4 py-3 rounded-[12px] border border-zinc-200 text-[14px] text-zinc-900 placeholder:text-zinc-300 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 transition-all"
                 />
               </div>
               <div>
@@ -82,12 +82,12 @@ export default function WaitlistModal({ plan, onClose }: Props) {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="email@kamu.com"
-                  className="w-full px-4 py-3 rounded-[12px] border border-zinc-200 text-[14px] text-zinc-900 placeholder:text-zinc-300 outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all"
+                  className="w-full px-4 py-3 rounded-[12px] border border-zinc-200 text-[14px] text-zinc-900 placeholder:text-zinc-300 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 transition-all"
                 />
               </div>
               <button
                 type="submit"
-                className="mt-2 w-full py-3 rounded-[12px] bg-zinc-900 hover:bg-zinc-700 text-white text-[14px] font-semibold transition-colors"
+                className="btn-primary w-full !py-3 !text-[14px] mt-2"
               >
                 Daftarkan Saya
               </button>
