@@ -15,7 +15,7 @@ export default function FinalCTA() {
         }}
       />
 
-      <div className="relative z-10 max-w-[800px] mx-auto px-8">
+      <div className="relative z-10 max-w-[800px] mx-auto px-5 md:px-8">
         <h2 className="text-[clamp(28px,4vw,48px)] font-bold leading-[1.1] tracking-[-0.03em] text-zinc-900 mb-5">
           Audit landing page pertamamu,<br />gratis sekarang juga.
         </h2>

@@ -35,7 +35,7 @@ export default function Problem() {
 
   return (
     <section id="problem" className="py-28 bg-white">
-      <div className="max-w-[1100px] mx-auto px-12">
+      <div className="max-w-[1100px] mx-auto px-5 md:px-12">
         {/* Heading */}
         <div className="text-center mb-20">
           <h2 className="text-[clamp(28px,4vw,48px)] font-bold leading-[1.1] tracking-[-0.03em] text-zinc-900 mb-5">
@@ -47,7 +47,7 @@ export default function Problem() {
         </div>
 
         {/* Top row — 3 col, dividers only */}
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-3">
           {top.map((item, i) => {
             const Icon = item.icon;
             return (
@@ -55,7 +55,7 @@ export default function Problem() {
                 key={item.title}
                 className={`flex flex-col items-center text-center px-8 py-12 relative ${
                   item.featured ? "bg-zinc-50" : "bg-white"
-                } ${i > 0 ? "border-l border-zinc-200" : ""}`}
+                } ${i > 0 ? "border-t md:border-t-0 md:border-l border-zinc-200" : ""}`}
               >
                 {item.featured && (
                   <div
@@ -80,14 +80,14 @@ export default function Problem() {
         <div className="border-t border-zinc-200" />
 
         {/* Bottom row — 2 col, divider only */}
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           {bottom.map((item, i) => {
             const Icon = item.icon;
             return (
               <div
                 key={item.title}
                 className={`flex flex-col items-center text-center px-8 py-12 bg-white ${
-                  i > 0 ? "border-l border-zinc-200" : ""
+                  i > 0 ? "border-t md:border-t-0 md:border-l border-zinc-200" : ""
                 }`}
               >
                 <div className="w-[68px] h-[68px] rounded-full bg-blue-500 flex items-center justify-center mb-6">

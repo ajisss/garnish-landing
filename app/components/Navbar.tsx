@@ -31,9 +31,9 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="fixed top-4 left-0 right-0 z-50 flex justify-center px-6 pointer-events-none">
+    <div className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
       <nav
-        className="pointer-events-auto flex items-center gap-2 px-3 py-2 rounded-[22px]"
+        className="pointer-events-auto flex items-center gap-2 px-3 py-2 rounded-[22px] w-full max-w-[640px] md:w-auto"
         style={{
           background: "rgba(255,255,255,0.08)",
           backdropFilter: "blur(16px) saturate(140%)",
@@ -50,8 +50,8 @@ export default function Navbar() {
           <span className="text-[14px] font-semibold text-zinc-900 tracking-tight">Garnish</span>
         </a>
 
-        {/* Divider */}
-        <div className="w-px h-4 bg-zinc-200 mx-1" />
+        {/* Divider — only shown when nav links are visible */}
+        <div className="hidden md:block w-px h-4 bg-zinc-200 mx-1" />
 
         {/* Links */}
         <ul className="hidden md:flex items-center gap-0.5 list-none">
@@ -76,7 +76,10 @@ export default function Navbar() {
         </ul>
 
         {/* Divider */}
-        <div className="w-px h-4 bg-zinc-200 mx-1" />
+        <div className="hidden md:block w-px h-4 bg-zinc-200 mx-1" />
+
+        {/* Spacer on mobile — push CTA to right */}
+        <div className="flex-1 md:hidden" />
 
         {/* CTA */}
         <a

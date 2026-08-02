@@ -23,7 +23,7 @@ export default function BeforeAfter() {
 
   return (
     <section id="before-after" className="py-28 bg-white">
-      <div className="max-w-[1100px] mx-auto px-12">
+      <div className="max-w-[1100px] mx-auto px-5 md:px-12">
         <div className="text-center mb-14">
           <h2 className="text-[clamp(28px,4vw,48px)] font-bold leading-[1.1] tracking-[-0.03em] text-zinc-900 mb-4">
             Sebelum dan sesudah Garnish,<br />satu geseran.
@@ -36,8 +36,7 @@ export default function BeforeAfter() {
         {/* Slider */}
         <div
           ref={containerRef}
-          className="relative w-full rounded-2xl overflow-hidden border border-zinc-100 shadow-lg select-none cursor-col-resize"
-          style={{ aspectRatio: "16/9" }}
+          className="relative w-full aspect-[4/3] md:aspect-[16/9] rounded-2xl overflow-hidden border border-zinc-100 shadow-lg select-none cursor-col-resize"
           onMouseDown={onMouseDown}
           onMouseMove={onMouseMove}
           onMouseUp={onMouseUp}

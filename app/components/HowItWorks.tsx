@@ -131,7 +131,7 @@ const steps = [
 export default function HowItWorks() {
   return (
     <section id="how-it-works" className="py-28 bg-white">
-      <div className="max-w-[1100px] mx-auto px-12">
+      <div className="max-w-[1100px] mx-auto px-5 md:px-12">
         <div className="text-center mb-20">
           <h2 className="text-[clamp(28px,4vw,48px)] font-bold leading-[1.1] tracking-[-0.03em] text-zinc-900 mb-4">
             Tiga langkah dari URL ke fix.
@@ -141,21 +141,22 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-24">
+        <div className="flex flex-col gap-16 md:gap-24">
           {steps.map((step, i) => (
             <div
               key={step.title}
-              className={`grid grid-cols-2 gap-16 items-center ${!step.visualLeft ? "direction-reverse" : ""}`}
+              className="flex flex-col md:grid md:grid-cols-2 md:gap-16 items-center gap-8"
             >
               {step.visualLeft ? (
                 <>
-                  <div>{step.visual}</div>
+                  <div className="w-full">{step.visual}</div>
                   <TextBlock step={step} index={i} />
                 </>
               ) : (
                 <>
+                  <div className="w-full md:hidden">{step.visual}</div>
                   <TextBlock step={step} index={i} />
-                  <div>{step.visual}</div>
+                  <div className="w-full hidden md:block">{step.visual}</div>
                 </>
               )}
             </div>

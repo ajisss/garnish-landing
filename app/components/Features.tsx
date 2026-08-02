@@ -42,7 +42,7 @@ const features = [
 export default function Features() {
   return (
     <section id="features" className="py-28 bg-white">
-      <div className="max-w-[1100px] mx-auto px-12">
+      <div className="max-w-[1100px] mx-auto px-5 md:px-12">
         {/* Heading */}
         <div className="text-center mb-14">
           <h2 className="text-[clamp(28px,4vw,48px)] font-bold leading-[1.1] tracking-[-0.03em] text-zinc-900 mb-4">
@@ -54,7 +54,7 @@ export default function Features() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {features.map((f) => {
             const Icon = f.icon;
             return (
@@ -88,7 +88,7 @@ export default function Features() {
                 </div>
 
                 {/* Text — pushed to bottom */}
-                <div className="mt-16">
+                <div className="mt-8 lg:mt-16">
                   <h3
                     className={`text-[17px] font-semibold mb-2 leading-snug ${
                       f.featured ? "text-white" : "text-zinc-900"

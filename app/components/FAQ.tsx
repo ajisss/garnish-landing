@@ -31,7 +31,7 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="py-28 bg-white">
-      <div className="max-w-[1100px] mx-auto px-12">
+      <div className="max-w-[1100px] mx-auto px-5 md:px-12">
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-[clamp(28px,4vw,48px)] font-bold leading-[1.1] tracking-[-0.03em] text-zinc-900">
@@ -68,7 +68,7 @@ export default function FAQ() {
 
               {/* Answer */}
               <div className={`overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${open === i ? "max-h-64 opacity-100" : "max-h-0 opacity-0"}`}>
-                <div className="pl-[72px] pb-5">
+                <div className="pl-0 md:pl-[72px] pb-5">
                   <p className="text-[14px] text-zinc-400 leading-[1.75] whitespace-pre-line">{faq.a}</p>
                 </div>
               </div>

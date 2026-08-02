@@ -21,10 +21,10 @@ const pillars = [
 export default function WhatIsGarnish() {
   return (
     <section id="what-is-garnish" className="py-28 bg-white">
-      <div className="max-w-[1100px] mx-auto px-12">
-        <div className="flex gap-20 items-start">
+      <div className="max-w-[1100px] mx-auto px-5 md:px-12">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
           {/* Left — sticky label + headline */}
-          <div className="w-[380px] flex-shrink-0 sticky top-28">
+          <div className="w-full lg:w-[380px] flex-shrink-0 lg:sticky lg:top-28">
             <h2 className="text-[clamp(28px,4vw,48px)] font-bold leading-[1.1] tracking-[-0.03em] text-zinc-900 mb-5">
               Plugin Claude Code untuk audit landing page.
             </h2>

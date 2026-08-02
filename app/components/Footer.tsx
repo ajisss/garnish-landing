@@ -31,7 +31,7 @@ export default function Footer() {
       </a>
 
       {/* Bottom bar */}
-      <div className="border-t border-zinc-100 px-8 py-4 flex items-center justify-end">
+      <div className="border-t border-zinc-100 px-5 md:px-8 py-4 flex items-center justify-end">
         <p className="text-[13px] text-zinc-400">
           © 2026 Garnish. All rights reserved.
         </p>

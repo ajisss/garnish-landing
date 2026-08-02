@@ -18,9 +18,9 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 max-w-[760px] mx-auto px-8">
+      <div className="relative z-10 max-w-[760px] mx-auto px-5 md:px-8">
         {/* Headline */}
-        <h1 className="text-[clamp(44px,6vw,72px)] font-bold leading-[1.18] tracking-[-0.03em] text-zinc-900 mb-6">
+        <h1 className="text-[clamp(36px,6vw,72px)] font-bold leading-[1.18] tracking-[-0.03em] text-zinc-900 mb-6">
           Audit Landing Page,{" "}
           <span className="inline-flex items-center gap-3">
             Otomatis
